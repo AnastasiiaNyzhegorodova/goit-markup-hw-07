@@ -1,0 +1,26 @@
+.logo--accent-color {
+  color: var(--accent-color);
+}
+
+.logo--second-color {
+  color: #000000;
+}
+
+.link--current {
+  position: relative;
+
+  color: var(--accent-color);
+}
+
+.link--current::after {
+  position: absolute;
+
+  display: inline-block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  top: 44px;
+
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
