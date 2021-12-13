@@ -1,11 +1,11 @@
-.footer {
+.page-footer {
   padding: 60px 0;
   height: 252px;
 
   background-color: #2f303a;
 }
 
-.footer-logo {
+.page-footer__logo {
   display: block;
   margin-bottom: 30px;
 
@@ -18,7 +18,7 @@
   color: var(--accent-color);
 }
 
-.footer-logo-second-color {
+.page-footer__logo--second-color {
   color: var(--second-text-color);
 }
 
@@ -50,7 +50,7 @@
   margin-bottom: 9px;
 }
 
-.footer-address-social {
+.address-social__wrap {
   display: flex;
   align-items: baseline;
 }
@@ -72,11 +72,6 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-text-color);
-}
-
-.team-social-list {
-  display: flex;
-  justify-content: center;
 }
 
 .footer-social-item {
