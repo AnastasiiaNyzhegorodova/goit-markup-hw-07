@@ -16,19 +16,18 @@
   padding-bottom: 0;
 }
 
-.values-list {
+.values__list {
   display: flex;
 }
 
-.values-list .values-list-item + .values-list-item {
+.values__item {
+  & + .values__item {
   margin-left: 30px;
-}
-
-.values-list-item {
   width: 270px;
+  }
 }
 
-.values-block-icon {
+.values__icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +39,7 @@
   border-radius: 4px;
 }
 
-.values-item-tittle {
+.values__item-tittle {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -51,7 +50,7 @@
   color: var(--title-text-color);
 }
 
-.values-text {
+.values__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

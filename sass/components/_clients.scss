@@ -1,4 +1,4 @@
-.clients-tittle {
+.clients__tittle {
   display: block;
   margin: 0 auto 50px;
 
@@ -10,20 +10,19 @@
   color: var(--title-text-color);
 }
 
-.clients-list {
+.clients__list {
   display: flex;
 }
 
-.clients-item {
+.clients__item {
   width: 170px;
   height: 92px;
+  & + & {
+    margin-left: 30px;
+  }
 }
 
-.clients-item + .clients-item {
-  margin-left: 30px;
-}
-
-.client-link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,14 +35,11 @@
   transition-property: fill, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+  }
 }
 
-.client-link:hover,
-.client-link:focus {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
-}
 
-.client-icon {
-  fill: currentColor;
-}
