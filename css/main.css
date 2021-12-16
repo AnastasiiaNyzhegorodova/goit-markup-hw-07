@@ -1,3 +1,64 @@
+:root {
+  --title-text-color: #212121;
+  --main-text-color: #757575;
+  --second-text-color: #ffffff;
+  --accent-color: #2196f3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--main-text-color);
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
   padding-top: 24px;
@@ -6,17 +67,6 @@
 
 .page-header__logo {
   margin-right: 93px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-
-.page-header__logo--accent-color {
-  color: var(--accent-color);
 }
 
 .page-header__logo--second-color {
@@ -152,19 +202,6 @@
   border-color: transparent;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .values {
   padding-bottom: 0;
 }
@@ -211,14 +248,7 @@
 }
 
 .about__tittle {
-  display: block;
   margin: 0 auto 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
 }
 
 .about__list {
@@ -257,14 +287,7 @@
 }
 
 .team__tittle {
-  display: block;
   margin: 0 auto 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
 }
 
 .team__list {
@@ -310,55 +333,22 @@
   color: var(--main-text-color);
 }
 
-.team__social-list {
-  display: flex;
-  justify-content: center;
-}
-
-.team__social-item {
-  width: 44px;
-  height: 44px;
-}
-
-.team__social-item + .team__social-item {
-  margin-left: 10px;
-}
-
-.team__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team__link:hover, .team__link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: var(--accent-color);
   fill: #ffffff;
 }
 
-.team__icon {
+.social-list__team-icon {
   fill: #afb1b8;
 }
 
-.team__link:hover .team__icon,
-.team__link:focus .team__icon {
+.social-list__link:hover .social-list__team-icon,
+.social-list__link:focus .social-list__team-icon {
   fill: #ffffff;
 }
 
 .clients__tittle {
-  display: block;
   margin: 0 auto 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
 }
 
 .clients__list {
@@ -400,15 +390,7 @@
 }
 
 .page-footer__logo {
-  display: block;
   margin-bottom: 30px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
 }
 
 .page-footer__logo--second-color {
@@ -450,6 +432,7 @@
 
 .social__wrap {
   margin-left: 70px;
+  margin-right: 93px;
 }
 
 .social__tittle {
@@ -462,43 +445,16 @@
   color: var(--second-text-color);
 }
 
-.social__list {
-  display: flex;
-}
-
-.social__item {
-  width: 44px;
-  height: 44px;
-}
-
-.social__item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social__link:hover, .social__link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: var(--accent-color);
 }
 
-.social__icon {
-  fill: currentColor;
+.social__link--footer-bg-color {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.newsletter {
-  margin-left: 93px;
+.social-list__footer-icon {
+  fill: #ffffff;
 }
 
 .newsletter__text {
@@ -775,11 +731,14 @@
 .filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 .filter .filter__item + .filter__item {
   margin-left: 8px;
+}
+
+.filter__position {
+  margin-bottom: 50px;
 }
 
 .filter__button {
@@ -887,51 +846,50 @@
   border-left: 1px solid #eeeeee;
 }
 
-:root {
-  --title-text-color: #212121;
-  --main-text-color: #757575;
-  --second-text-color: #ffffff;
-  --accent-color: #2196f3;
+.logo {
+  display: block;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
+.tittle {
+  display: block;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 
-ul {
-  margin: 0;
-  padding: 0;
+.social-list {
+  display: flex;
+  justify-content: center;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  color: var(--main-text-color);
-  font-family: "Roboto", sans-serif;
+.social-list__item {
+  width: 44px;
+  height: 44px;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+.social-list__item + .social-list__item {
+  margin-left: 10px;
 }
 
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.section {
-  padding: 94px 0;
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*# sourceMappingURL=main.css.map */
